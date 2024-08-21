@@ -1,8 +1,11 @@
 import {} from 'react'
+import ProjectStactist from '../components/ProjectStactist'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <ProjectStactist/>
+    </div>
   )
 }
 

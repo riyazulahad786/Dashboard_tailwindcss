@@ -3,7 +3,7 @@ import { FaBell } from "react-icons/fa";
 
 function Header() {
   return (
-    <div className='flex justify-between items-center p-2'>
+    <div className='flex justify-between items-center px-5 py-2 shadow-md'>
     {/* -------- */}
       <div>
           <h1 className='text-xs'>Welcome back </h1>
