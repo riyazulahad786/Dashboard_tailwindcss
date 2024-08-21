@@ -1,8 +1,19 @@
 import {} from 'react'
+import Sidebar from './Sidebar'
+import Header from './Header'
+import { Outlet } from 'react-router-dom'
 
 function Layout() {
   return (
-    <div>Layout</div>
+    <div>
+       <div className='flex'>
+       <Sidebar/>
+        <div className='w-full ml-16 '>
+            <Header/>
+            <Outlet/>
+        </div>
+       </div>
+    </div>
   )
 }
 
