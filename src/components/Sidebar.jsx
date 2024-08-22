@@ -26,7 +26,7 @@ function Sidebar() {
     { id: 7, Path: "/help", name: "Help", icons: <IoMdHelpCircle /> },
   ];
   return (
-    <div className="w-16 left-0 top-0  fixed z-10 h-screen pt-9 border-r md:w-48 px-4 ">
+    <div className="w-16 left-0 top-0  fixed z-10 h-screen pt-9 border-r md:w-48 sm:w-56 bg-white px-4 ">
       {/* logo */}
       <div className="mb-8">
         <img src="/logo.svg" className="img-fluid w-28 hidden md:flex" />
@@ -34,7 +34,7 @@ function Sidebar() {
       </div>
       {/* navigations */}
       <div>
-        <ul className="space-y-3 items-center">
+        <ul className="space-y-6 mt-6 items-center">
           {SidebarLink.map((link, index) => (
             <>
               <li
