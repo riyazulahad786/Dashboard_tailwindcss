@@ -1,8 +1,15 @@
 import {} from 'react'
 
-function ClientCard() {
+function ClientCard({client}) {
+
   return (
-    <div>ClientCard</div>
+    <div className='p-6 bg-white rounded-xl space-y-3 shadow'>
+      <div className=''>
+        <h1 className='text-xl font-semibold'>{client.name}</h1>
+        <p className='text-sm text-gray-400'>{client.title}</p>
+      </div>
+      <p className='text-sm text-gray-900'>{client.date}</p>
+    </div>
   )
 }
 

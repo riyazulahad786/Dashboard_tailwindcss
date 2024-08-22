@@ -1,5 +1,6 @@
 import {} from 'react'
 import { FaBell } from "react-icons/fa";
+import UserMenu from './UserMenu';
 
 function Header() {
   return (
@@ -21,7 +22,10 @@ function Header() {
         </button>
       </div>
       <div>
-      <img src='/Riyaz.jpg' className='w-8 h-8 rounded-full border-2 border-indigo-500'/>
+      {/* <img src='/Riyaz.jpg' className='w-8 h-8 rounded-full border-2 border-indigo-500'/> */}
+      
+         <UserMenu/>
+
       </div>
       </div>
     </div>

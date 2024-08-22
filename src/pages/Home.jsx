@@ -2,6 +2,9 @@ import {} from 'react'
 import ProjectStactist from '../components/ProjectStactist'
 import Platform from '../components/Platform'
 import ProjectCard from '../components/ProjectCard';
+import ClientCard from '../components/ClientCard';
+import MemberCard from '../components/MemberCard';
+
 
 function Home() {
   const projects = [
@@ -94,6 +97,29 @@ function Home() {
           <div className='grid md:grid-cols-2 xl:grid-cols-4 gap-8'>
             {
               projects && projects.map((project)=> <ProjectCard project={project}/>)
+            }
+          </div>
+      </div>
+      {/*  */}
+      <div>
+          <div className='flex justify-between items-center py-3'>
+               <h1 className='text-lg font-semibold'>Current clients</h1>
+               <p className='text-sm underline text-indigo-600'>See all</p>
+          </div>
+          <div className='grid md:grid-cols-2 xl:grid-cols-4 gap-8'>
+            {
+              clients && clients.map((client)=> <ClientCard client={client}/>)
+            }
+          </div>
+      </div>
+      <div>
+          <div className='flex justify-between items-center py-3'>
+               <h1 className='text-lg font-semibold'>Current Members</h1>
+               <p className='text-sm underline text-indigo-600'>See all</p>
+          </div>
+          <div className='grid md:grid-cols-2 xl:grid-cols-4 gap-8'>
+            {
+              members && members.map((member)=> <MemberCard member={member}/>)
             }
           </div>
       </div>

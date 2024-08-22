@@ -59,7 +59,7 @@ function Sidebar() {
         </ul>
       </div>
       <div className="w-full absolute bottom-0 left-0 px-4 py-2 cursor-pointer text-center">
-        <p className="space-x-2 font-bold flex items-center text-white px-2 py-3 bg-gradient-to-r from-indigo-400 to-violet-800">
+        <p className="space-x-2 font-bold rounded-xl flex items-center text-white px-2 py-3 bg-gradient-to-r from-indigo-400 to-violet-800">
           <span className="hidden md:flex">Need Help?</span>
         </p>
       </div>
