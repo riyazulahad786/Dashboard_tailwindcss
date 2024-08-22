@@ -79,7 +79,7 @@ function Home() {
     },
   ];
   return (
-    <div className='p-5'>
+    <div className='p-5 overflow-y-auto '>
       <div className='grid md:grid-cols-2 xl:grid-cols-4 gap-8'>
         <ProjectStactist/>
         <Platform/>
